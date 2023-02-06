@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}    
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+#bg{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.854);
+}
+
+#left h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    letter-spacing: -2px;
+}
+
+#left a{
+    display: block;
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#toplinks h5{
+    font-size: 10px;
+}
+
+#toplinks h2{
+    font-size: 44px;
+    letter-spacing: -4px;
+}
+
+#centre{
+   width:35%;
+   height: 100%;
+   background-image: url(https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+   background-position: center;
+   background-size: cover;
+}
+
+#right{
+    position: relative;
+    width: 55%;
+    height: 100%;
+}   
+
+#centerright{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 50%; */
+    /* height: 50%; */
+    /* background-color: rgb(95, 95, 97); */
+}
+
+#centerright #lineelem{
+    display: flex;
+    align-items: center;
+}
+
+#centerright #lineelem h1{
+    margin: 0 30px;
+    font-weight: 900;
+}
+
+#centerright .line{
+    width: 30%;
+    height: 2px;
+    background-color: black;
+}
+
+#centerright>h1{
+    font-size: 100px;
+    padding: 0 20px;
+}
+
+#centerright p{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 27px;
+}
+
+#inputdiv{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin: 40px 25px;
+}
+
+#inputdiv input{
+    width: 70%;
+    height: 50px;
+    padding: 12px 30px;
+    border: 1.2px solid #e1e1e1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.106);
+}
+
+#inputdiv input::placeholder{
+    color: #dadada;
+    padding: 5px;
+}
+
+#inputdiv i{
+    color: #3a3939;
+}
+
+#inputdiv button{
+    width: 15%;
+    height: 50px;
+    border: none;
+    background-color: rgb(227, 154, 154);
+    color: white;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    text-transform: uppercase;
+}
+
+
+#inputdiv i{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0, -50%);
+    /* color: #c7c2c2; */
+}
+
+#feature{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 170px;
+    margin-top: 80px;
+
+}
+
+#feature p{
+    width: 50%;
+    line-height: 20px;
+    font-size: 12px;
+    opacity: .5;
+    font-weight: 600;
+    /* background-color: red; */
+}
+
+
+
+#feature #imgftr{
+    position: relative;
+    width: 55%;
+    height: 85%;
+    /* background-color: blue; */
+    background-image: url(https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2052&q=80);
+    background-position: left;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+#feature #imgftr i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 33px;
+    opacity: .5;
+}
+
+
+#sidepart{
+    position: absolute;
+    right: 4%;
+    transform-origin: 100% 0;
+    transform: rotate(-90deg);
+    top: 50%;
+}
+
+#sidepart a{
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: black;
+    opacity: .5;
+}
+
+#down{
+    position: absolute;
+    bottom: 10%;
+    right: 2.6%;
+    font-size: 22px;
+    opacity: .5;
+    margin-bottom: -10px;
+}
+
+
+#topicons{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+}
+
+
+#topicons i{
+    margin-left: 20px;
+    opacity: .5;
+}
